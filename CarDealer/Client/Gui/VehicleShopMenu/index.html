@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Acheter votre nouveau vehicule</title>
+    <link rel="stylesheet" href="http://asset/RolePlayPony/Assets/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://asset/RolePlayPony/CarDealer/Client/Gui/VehicleShopMenu/style.css">
+
+    <script src="http://asset/RolePlayPony/Assets/Js/vue.js"></script>
+
+    <!--    <link rel="stylesheet" href="style.css">-->
+    <!--    <link rel="stylesheet" href="../../../../Assets/Css/bootstrap.min.css">-->
+    <!--    <script src="../../../../Assets/Js/vue.js"></script>-->
+</head>
+
+
+<body>
+<div id="app">
+    <div class="section">
+        <div class="header-section">
+            <h3 class="title-section"><strong>Acheter votre voiture</strong></h3>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <select @change="vehicleTypeChange($event)" class="form-control">
+                    <option disabled selected>Type de vehicule</option>
+                    <option v-for="vehicleType in vehicleTypes">{{ vehicleType.name }}</option>
+                </select>
+            </div>
+            <div v-if="isVehicleTypeSelected" class="form-group">
+                <select @change="vehicleChange($event)" :value="getVehicleSelect" class="form-control">
+                    <option disabled selected>Type de vehicule</option>
+                    <option v-for="vehicle in vehicleList">{{ vehicle.name }}</option>
+                </select>
+            </div>
+            <div v-if="isVehicleSelected" class="row">
+                <img id="vehicle-image" :src="urlVehicleImages + vehicleSelected.imageUrl">
+                <h2>{{ vehicleSelected.price }} €</h2>
+                <button @click="buyVehicle">Acheter</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://asset/RolePlayPony/CarDealer/Client/Gui/VehicleShopMenu/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: transparent;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.title-section {
+    text-align: center;
+    color: white;
+    padding-top: 6px;
+}
+
+.section {
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    height: 800px;
+}
+
+.header-section {
+    background-color: #343434;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 50px;
+}
+
+#vehicle-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
+}

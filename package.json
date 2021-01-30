@@ -1,0 +1,33 @@
+{
+  "author": "Maxime JOSIEN",
+  "version": "0.1",
+  "server_scripts": [
+    "AdminCommands/Server/server.lua",
+    "CarDealer/Server/server.lua",
+    "SpawnPlayer/Server/server.lua",
+    "VehicleManagement/Server/server.lua"
+  ],
+  "client_scripts": [
+    "AdminCommands/Client/client.lua",
+    "CarDealer/Client/client.lua",
+    "VehicleManagement/Client/client.lua"
+  ],
+  "files": [
+    "Assets/Css/bootstrap.min.css",
+    "Assets/Js/vue.js",
+    "CarDealer/Client/Gui/Images/Vehicles/Coupe_01.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Lorry_01.png",
+    "CarDealer/Client/Gui/Images/Vehicles/Nascar_01.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Rally_01.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Sedan_01.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Sedan_02.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Sedan_03.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Sedan_OneColor.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/SportsCar_01.png",
+    "CarDealer/Client/Gui/Images/Vehicles/Truck_01.jpg",
+    "CarDealer/Client/Gui/Images/Vehicles/Truck_02.png",
+    "CarDealer/Client/Gui/VehicleShopMenu/index.html",
+    "CarDealer/Client/Gui/VehicleShopMenu/index.js",
+    "CarDealer/Client/Gui/VehicleShopMenu/style.css"
+  ]
+}
